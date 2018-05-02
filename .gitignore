@@ -5,3 +5,4 @@ myMoney/node_modules/.bin/*.*
 myMoney/node_modules/.bin/ansi-html
 *.cmd
 myMoney/node_modules
+myMoney/package-lock.json
