@@ -7,10 +7,10 @@
 /out-tsc
 
 # dependencies
-/node_modules/*
-/node_modules
-/node_modules/*.*
-
+myMoney/node_modules/*
+myMoney/node_modules
+myMoney/node_modules/*.*
+myMoney/node_modules/
 
 # IDEs and editors
 /.idea
