@@ -1,3 +1,4 @@
+//When using the CLI or many third-party tools, a file named tslint.json or tslint.yaml is used to configure which rules get run and each of their options.
 {
   "rulesDirectory": [
     "node_modules/codelyzer"
