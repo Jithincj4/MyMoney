@@ -12544,11 +12544,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\jithin.johnson\\source\\repos\\budgeterData\\budgeterData\\budgeterData.csproj",
+      "projectUniqueName": "C:\\Users\\jithin.johnson\\Documents\\GitHub\\MyMoney\\budgeterData\\budgeterData\\budgeterData.csproj",
       "projectName": "budgeterData",
-      "projectPath": "C:\\Users\\jithin.johnson\\source\\repos\\budgeterData\\budgeterData\\budgeterData.csproj",
+      "projectPath": "C:\\Users\\jithin.johnson\\Documents\\GitHub\\MyMoney\\budgeterData\\budgeterData\\budgeterData.csproj",
       "packagesPath": "C:\\Users\\jithin.johnson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jithin.johnson\\source\\repos\\budgeterData\\budgeterData\\obj\\",
+      "outputPath": "C:\\Users\\jithin.johnson\\Documents\\GitHub\\MyMoney\\budgeterData\\budgeterData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

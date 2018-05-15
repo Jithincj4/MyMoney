@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace budgeterData.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class UsersController : Controller
     {
-        // GET api/values
+        // GET api/users
         [HttpGet]
         public IEnumerable<string> Get()
         {
