@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using budgeterData.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace budgeterData.Controllers
@@ -18,13 +19,7 @@ namespace budgeterData.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            _userContext.Add(new User()
-            {
-                UserName = "Jerin",
-                UserRealName = "Jerin Johnson",
-                Password = "aa"
-            });
-            _userContext.SaveChanges();
+            
             return new string[] { "value1", "value2" };
         }
 
@@ -35,10 +30,13 @@ namespace budgeterData.Controllers
             return "value";
         }
 
-        // POST api/values
+        // POST api/users
         [HttpPost]
-        public void Post([FromBody]string value)
+        [EnableCors("ng2_policy")]
+        public void Post([FromBody]User User)
         {
+            _userContext.Add(User);
+            _userContext.SaveChanges();
         }
 
         // PUT api/values/5
@@ -52,5 +50,6 @@ namespace budgeterData.Controllers
         public void Delete(int id)
         {
         }
+
     }
 }

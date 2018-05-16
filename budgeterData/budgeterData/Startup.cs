@@ -16,6 +16,7 @@ namespace budgeterData
     {
         public Startup(IConfiguration configuration)
         {
+
             Configuration = configuration;
         }
 
@@ -27,6 +28,12 @@ namespace budgeterData
             services.AddMvc();
             var connection = @"Server=.\SQLEXPRESS;Database=SchoolDB;Trusted_Connection=True;";
             services.AddDbContext<UserContext>(options => options.UseSqlServer(connection));
+            services.AddCors(o => o.AddPolicy("ng2_policy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +45,8 @@ namespace budgeterData
             }
 
             app.UseMvc();
-           
+            // Shows UseCors with CorsPolicyBuilder.(Angular 2 app address)
+            app.UseCors("ng2_policy");
         }
     }
 }

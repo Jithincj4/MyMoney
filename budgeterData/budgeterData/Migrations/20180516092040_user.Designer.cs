@@ -11,9 +11,10 @@ using System;
 namespace budgeterData.Migrations
 {
     [DbContext(typeof(UserContext))]
-    partial class UserContextModelSnapshot : ModelSnapshot
+    [Migration("20180516092040_user")]
+    partial class user
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,7 +34,7 @@ namespace budgeterData.Migrations
 
                     b.Property<string>("firstname");
 
-                    b.HasKey("id");
+                    b.HasKey("UserId");
 
                     b.ToTable("users");
                 });

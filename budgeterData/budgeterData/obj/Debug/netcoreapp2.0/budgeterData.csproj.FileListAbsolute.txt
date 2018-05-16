@@ -14,9 +14,9 @@ C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\bin\D
 C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\bin\Debug\netcoreapp2.0\budgeterData.runtimeconfig.dev.json
 C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\bin\Debug\netcoreapp2.0\budgeterData.dll
 C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\bin\Debug\netcoreapp2.0\budgeterData.pdb
-C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\obj\Debug\netcoreapp2.0\budgeterData.csprojResolveAssemblyReference.cache
 C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\obj\Debug\netcoreapp2.0\budgeterData.csproj.CoreCompileInputs.cache
 C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\obj\Debug\netcoreapp2.0\budgeterData.AssemblyInfoInputs.cache
 C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\obj\Debug\netcoreapp2.0\budgeterData.AssemblyInfo.cs
 C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\obj\Debug\netcoreapp2.0\budgeterData.dll
 C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\obj\Debug\netcoreapp2.0\budgeterData.pdb
+C:\Users\jithin.johnson\Documents\GitHub\MyMoney\budgeterData\budgeterData\obj\Debug\netcoreapp2.0\budgeterData.csprojResolveAssemblyReference.cache

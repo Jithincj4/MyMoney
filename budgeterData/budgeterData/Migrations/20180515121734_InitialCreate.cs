@@ -13,7 +13,7 @@ namespace budgeterData.Migrations
                 name: "users",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(nullable: false)
+                    id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Password = table.Column<string>(nullable: true),
                     UserName = table.Column<string>(nullable: true),
@@ -21,7 +21,7 @@ namespace budgeterData.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_users", x => x.UserId);
+                    table.PrimaryKey("PK_users", x => x.id);
                 });
         }
 
