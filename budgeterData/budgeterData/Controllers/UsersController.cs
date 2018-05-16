@@ -17,10 +17,10 @@ namespace budgeterData.Controllers
         }
         // GET api/users
         [HttpGet]
-        public IEnumerable<string> Get()
+        [EnableCors("ng2_policy")]
+        public IEnumerable<User> Get()
         {
-            
-            return new string[] { "value1", "value2" };
+            return _userContext.users;
         }
 
         // GET api/values/5
