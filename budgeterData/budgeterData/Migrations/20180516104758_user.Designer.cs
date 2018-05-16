@@ -11,8 +11,8 @@ using System;
 namespace budgeterData.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20180516094127_users")]
-    partial class users
+    [Migration("20180516104758_user")]
+    partial class user
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,6 +33,8 @@ namespace budgeterData.Migrations
                     b.Property<string>("UserName");
 
                     b.Property<string>("firstname");
+
+                    b.Property<string>("token");
 
                     b.HasKey("id");
 

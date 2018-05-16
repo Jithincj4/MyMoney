@@ -21,5 +21,6 @@ namespace budgeterData.Models
         public string Password { get; set; }
         public string firstname { get; set; }
         public string LastName { get; set; }
+        public string token { get; set; }
     }
 }

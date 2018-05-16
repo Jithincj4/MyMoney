@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace budgeterData.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class user : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,9 +15,11 @@ namespace budgeterData.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    LastName = table.Column<string>(nullable: true),
                     Password = table.Column<string>(nullable: true),
                     UserName = table.Column<string>(nullable: true),
-                    UserRealName = table.Column<string>(nullable: true)
+                    firstname = table.Column<string>(nullable: true),
+                    token = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

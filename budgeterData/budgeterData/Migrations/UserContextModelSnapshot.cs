@@ -33,6 +33,8 @@ namespace budgeterData.Migrations
 
                     b.Property<string>("firstname");
 
+                    b.Property<string>("token");
+
                     b.HasKey("id");
 
                     b.ToTable("users");
