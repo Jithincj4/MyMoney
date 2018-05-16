@@ -6,3 +6,8 @@ myMoney/node_modules/.bin/ansi-html
 *.cmd
 myMoney/node_modules
 myMoney/package-lock.json
+*.lock
+budgeterData/.vs/budgeterData/v15/.suo
+budgeterData/.vs/budgeterData/v15/Server/sqlite3/storage.ide
+budgeterData/.vs/budgeterData/v15/Server/sqlite3/storage.ide-shm
+budgeterData/.vs/budgeterData/v15/Server/sqlite3/storage.ide-wal
