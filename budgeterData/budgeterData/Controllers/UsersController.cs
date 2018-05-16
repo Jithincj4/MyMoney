@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using budgeterData.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace budgeterData.Controllers
@@ -9,10 +10,21 @@ namespace budgeterData.Controllers
     [Route("api/[controller]")]
     public class UsersController : Controller
     {
+        private readonly UserContext _userContext;
+        public UsersController(UserContext userContext) {
+            _userContext = userContext;
+        }
         // GET api/users
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            _userContext.Add(new User()
+            {
+                UserName = "Jerin",
+                UserRealName = "Jerin Johnson",
+                Password = "aa"
+            });
+            _userContext.SaveChanges();
             return new string[] { "value1", "value2" };
         }
 

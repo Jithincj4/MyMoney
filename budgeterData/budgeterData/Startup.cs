@@ -8,7 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-
+using budgeterData.Models;
+using Microsoft.EntityFrameworkCore;
 namespace budgeterData
 {
     public class Startup
@@ -24,6 +25,8 @@ namespace budgeterData
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            var connection = @"Server=.\SQLEXPRESS;Database=SchoolDB;Trusted_Connection=True;";
+            services.AddDbContext<UserContext>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +38,7 @@ namespace budgeterData
             }
 
             app.UseMvc();
+           
         }
     }
 }
